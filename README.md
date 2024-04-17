@@ -9,9 +9,10 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 ### Hedeflerimiz:
 
-### Library System
+### main.java.org.library.library.Library System
 
- * ![](challenge1.png)
+[//]: # ( * ![]&#40;challenge1.png&#41;)
+ * ![](libraryUML.png)
  * Bir kütüphane sistemi modelimiz mevcut.
  * Bu modeli programlamak istiyoruz. Nesne Tabanlı bir uygulama geliştirmek zorundayız.
  * Tamamen özgür bir şekilde istediğiniz türde bir dizayn yapabilirsiniz.
