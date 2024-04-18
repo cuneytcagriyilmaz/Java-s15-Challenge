@@ -168,6 +168,8 @@ public class Main {
         System.out.println("\nUpdating a book:");
         librarian.updateBook(book1984, null, "Animal Farm", null, null, null, null, null);
         book1984.display();
+        System.out.println("search*******");
+        librarian.searchBook("Kumarbaz");
     }
 
 }

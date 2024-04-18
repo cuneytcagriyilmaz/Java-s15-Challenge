@@ -26,18 +26,20 @@ public class Librarian implements Personable {
 
     public void searchBook(String bookName) {
         Library library = Library.getInstance();
-        boolean found = false;
-        for (Map.Entry<Integer, Book> entry : library.getBooksOfLibrary().entrySet()) {
-            Book book = entry.getValue();
+        Book takenBook = null;
+
+        for (Book book : library.getBooksOfLibrary().values()) {
             if (book.getTitle().equalsIgnoreCase(bookName)) {
-                System.out.println("Book found:");
-                book.display();
-                found = true;
+                takenBook = book;
                 break;
             }
         }
-        if (!found) {
-            System.out.println("Book not found.");
+
+        if (takenBook != null) {
+            System.out.println(takenBook.getTitle() + " Book found:");
+            takenBook.display();
+        } else {
+            System.out.println( takenBook.getTitle() + " Book not found.");
         }
     }
 
